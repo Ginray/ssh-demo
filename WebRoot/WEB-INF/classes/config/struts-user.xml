@@ -29,7 +29,7 @@
 	
 
 	<!-- 与spring集成的写法，action等交予spring管理 -->
- 
+
 	<package name="loginAction" namespace="/" extends="abstract_struts">
 	
 		<action name="login" class="loginAction">

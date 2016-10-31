@@ -1,5 +1,6 @@
 package com.ginray.dao;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
@@ -28,11 +29,10 @@ public class UserDaoImp implements IUserDao{
 		System.out.println("-------UserDaoImp.modifyUser-----------"
 				+ user.getName());
 		System.out.println("id  "+user.getId());
-		//User fuser=new User();
-		//System.out.println("fuser   "+fuser.getId());
 		//user.setId(1);  //TO BE FIX 
 		try{
-		getSession().update(user);
+			Query q = getSession().createQuery("update User user set password ="+user.getPassword()+",age="+user.getAge()+" where user.name="+user.getName());
+	        //getSession().update(user);
 		}catch(Exception e){
 			e.printStackTrace();	
 		}

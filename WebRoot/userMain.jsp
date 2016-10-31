@@ -37,16 +37,23 @@
 	
 
 </script>
+
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="css/github-dark.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
+<br><br><hr/>
+<h3 class ="container">
 <form id="myform1" >
-	ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="text" name ="user.id" /><br/ >
+	ID:&nbsp&nbsp&nbsp&nbsp<input type ="text" name ="user.id" /><br/ >  
 	用户名：<input type="text" name="user.name" /><br />
-	密码：&nbsp&nbsp&nbsp<input type="text" name="user.password" /><br />
-	年龄：&nbsp&nbsp&nbsp<input type="text" name="user.age" /><br />
+	密码：&nbsp&nbsp<input type="text" name="user.password" /><br />
+	年龄：&nbsp&nbsp<input type="text" name="user.age" /><br />
 	<input type="button" name="btnadd" onclick="addUser()" value="增加" />
 	<input type="button" name="btnmodify" onclick="modifyUser()" value="修改" />
 	<input type="button" name="btndel" onclick="deleteUser()" value="删除"  />
  </form>
+ </h3>
 </body>
 </html>

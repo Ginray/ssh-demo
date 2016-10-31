@@ -61,7 +61,7 @@ public class UserAction extends ActionSupport {
 			return "success";
 		}
 		catch(Exception e){
-			return "success";
+			return "fail";
 		}
 	}
 	
